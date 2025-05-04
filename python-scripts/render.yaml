@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cropdisease-app
+    env: python
+    branch: main
+    buildCommand: "pip install -r python-scripts/requirements.txt"
+    startCommand: "python python-scripts/app.py"
+    plan: free
+
